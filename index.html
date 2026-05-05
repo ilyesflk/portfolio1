@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ilias Falek — Full-Stack & Frontend Developer</title>
+  <meta name="description" content="Portfolio of Ilias Falek — a passionate full-stack & frontend developer building modern web apps, mobile apps, and company platforms." />
+  <meta name="theme-color" content="#050510" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Three.js Hero Canvas -->
+  <canvas id="hero-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">IF.</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay Nav -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero section" id="hero">
+    <div class="hero-content">
+      <h1 class="hero-name" id="heroName">Ilias Falek</h1>
+      <p class="hero-subtitle">
+        I'm a <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-highlight">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <span class="section-label reveal">Who I Am</span>
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-card reveal">
+        <p class="about-text">
+          I'm <strong>Ilias Falek</strong>, a passionate full-stack & frontend developer based in <strong>Algeria</strong>.
+          I specialize in crafting performant, visually stunning web applications — from sleek single-page apps
+          to full-scale company platforms. Whether it's a <strong>React</strong>-powered dashboard,
+          a <strong>mobile delivery app</strong> built with React Native, or a university
+          <strong>graduation project</strong> management system, I bring ideas to life with clean code
+          and meticulous attention to design.
+        </p>
+        <div class="stats-row">
+          <div class="stat-item reveal">
+            <div class="stat-number" data-count="5">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item reveal">
+            <div class="stat-number" data-count="3">0</div>
+            <div class="stat-label">Mobile Apps</div>
+          </div>
+          <div class="stat-item reveal">
+            <div class="stat-number" data-count="2">0</div>
+            <div class="stat-label">Company Platforms</div>
+          </div>
+          <div class="stat-item reveal">
+            <div class="stat-number" data-count="1">0</div>
+            <div class="stat-label">PFE Project</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section class="section" id="skills">
+    <canvas id="skills-canvas"></canvas>
+    <div class="section-inner">
+      <span class="section-label reveal">What I Do</span>
+      <h2 class="section-title reveal">Skills & Expertise</h2>
+      <div class="skills-grid">
+
+        <!-- Frontend -->
+        <div class="skill-category reveal">
+          <div class="skill-category-title">
+            <span class="skill-category-icon">⚡</span> Frontend
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-item-header"><span>React</span><span class="skill-item-level">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Vue.js</span><span class="skill-item-level">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>HTML / CSS</span><span class="skill-item-level">Expert</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-width="97"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Tailwind CSS</span><span class="skill-item-level">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="skill-category reveal">
+          <div class="skill-category-title">
+            <span class="skill-category-icon">📱</span> Mobile
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-item-header"><span>React Native</span><span class="skill-item-level">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-width="87"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Flutter</span><span class="skill-item-level">Intermediate</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-width="68"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>App Architecture</span><span class="skill-item-level">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category reveal">
+          <div class="skill-category-title">
+            <span class="skill-category-icon">🖥️</span> Backend
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Node.js</span><span class="skill-item-level">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Express</span><span class="skill-item-level">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>REST APIs</span><span class="skill-item-level">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category reveal">
+          <div class="skill-category-title">
+            <span class="skill-category-icon">🛠️</span> Tools
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Git / GitHub</span><span class="skill-item-level">Advanced</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>Figma</span><span class="skill-item-level">Intermediate</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item-header"><span>VS Code</span><span class="skill-item-level">Expert</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-width="95"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <span class="section-label reveal">My Work</span>
+      <h2 class="section-title reveal">Featured Projects</h2>
+
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="pfe">PFE</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="platform">Platform</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal" data-category="pfe">
+          <span class="project-badge badge-pfe">PFE Project</span>
+          <h3 class="project-name">PFE Platform</h3>
+          <p class="project-desc">
+            Graduation project management system built with React & Node.js for
+            university students and supervisors — real-time tracking, file sharing, and evaluation workflows.
+          </p>
+          <a href="#" class="project-link">
+            View Project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal" data-category="frontend">
+          <span class="project-badge badge-frontend">Frontend</span>
+          <h3 class="project-name">E-commerce Dashboard</h3>
+          <p class="project-desc">
+            Admin dashboard for a local Algerian SME, built with Vue 3 and Tailwind CSS — 
+            analytics, inventory management, and order tracking in a clean UI.
+          </p>
+          <a href="#" class="project-link">
+            View Project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal" data-category="mobile">
+          <span class="project-badge badge-mobile">Mobile App</span>
+          <h3 class="project-name">Mobile Delivery App</h3>
+          <p class="project-desc">
+            Food delivery mobile app built with React Native for a small restaurant chain —
+            real-time orders, GPS tracking, and push notifications.
+          </p>
+          <a href="#" class="project-link">
+            View Project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal" data-category="platform">
+          <span class="project-badge badge-platform">Platform</span>
+          <h3 class="project-name">Company Intranet</h3>
+          <p class="project-desc">
+            Internal HR and task management platform for a medium-sized company —
+            employee directory, leave requests, and team collaboration tools.
+          </p>
+          <a href="#" class="project-link">
+            View Project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal" data-category="frontend">
+          <span class="project-badge badge-frontend">Frontend</span>
+          <h3 class="project-name">Portfolio Builder</h3>
+          <p class="project-desc">
+            A drag-and-drop portfolio generator built as a frontend SPA — 
+            customizable templates, live preview, and one-click export.
+          </p>
+          <a href="#" class="project-link">
+            View Project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <span class="section-label reveal">Get In Touch</span>
+      <h2 class="section-title reveal">Contact Me</h2>
+      <div class="contact-grid">
+
+        <form class="contact-form reveal" id="contactForm" onsubmit="return false;">
+          <div class="form-group">
+            <input type="text" id="contactName" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="contactEmail" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea id="contactMessage" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-send" id="sendBtn">Send Message</button>
+        </form>
+
+        <div class="contact-info reveal">
+          <p class="contact-info-text">
+            I'm always open to discussing new projects, creative ideas, or opportunities
+            to be part of your vision. Drop me a line and let's build something amazing together.
+          </p>
+          <div class="social-links">
+            <!-- GitHub -->
+            <a href="https://github.com/" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <!-- Email -->
+            <a href="mailto:contact@iliasfalek.dev" class="social-link" aria-label="Email">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 <span>Ilias Falek</span> — Built with passion & clean code.</p>
+  </footer>
+
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
